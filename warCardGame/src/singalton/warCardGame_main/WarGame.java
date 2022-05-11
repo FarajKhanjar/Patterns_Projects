@@ -55,10 +55,10 @@ public class WarGame
 		int  resultOfwinning = 0;
 		String nameOfGameWinner = null;
 
+		PrintMSG.finakGameMessage();
 		for (int i = 0; i < allPlayers.size(); i++) 
 		{
 			points = allPlayers.get(i).getScore();
-			PrintMSG.finakGameMessage();
 			System.out.println(allPlayers.get(i).getName() + " have " + points+" points.");
 			if(points > max) 
 			{

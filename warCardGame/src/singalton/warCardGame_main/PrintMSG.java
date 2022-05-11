@@ -42,6 +42,6 @@ public class PrintMSG
     
     public static void finakGameMessage() 
     {
-        System.out.printf("final results:");
+        System.out.printf("final results:\n\n");
     }
 }
