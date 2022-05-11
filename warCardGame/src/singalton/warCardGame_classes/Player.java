@@ -1,9 +1,9 @@
-package warCardGame.Main;
+package singalton.warCardGame_classes;
 
 public class Player 
 {
-	protected String name;
-	protected int card;
+	public String name;
+	public int card;
 	protected int score;
 	
 	public Player(String name) 
@@ -16,6 +16,16 @@ public class Player
 	public void addScore() 
 	{
 		score ++;
+	}
+	
+	public int getScore() 
+	{
+		return score;
+	}
+	
+	public String getName() 
+	{
+		return name;
 	}
 	
 	public void setCard(int value) {

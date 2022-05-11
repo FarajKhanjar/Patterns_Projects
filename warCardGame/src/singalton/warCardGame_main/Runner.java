@@ -1,4 +1,4 @@
-package warCardGame.Main;
+package singalton.warCardGame_main;
 
 public class Runner 
 {

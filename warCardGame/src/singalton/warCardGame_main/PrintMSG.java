@@ -1,8 +1,10 @@
-package warCardGame.Main;
+package singalton.warCardGame_main;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import singalton.warCardGame_classes.Player;
 
 public class PrintMSG 
 {
@@ -36,5 +38,10 @@ public class PrintMSG
     public static void startGameMessage() 
     {
         System.out.printf("let's Play!\n\n");
+    }
+    
+    public static void finakGameMessage() 
+    {
+        System.out.printf("final results:");
     }
 }

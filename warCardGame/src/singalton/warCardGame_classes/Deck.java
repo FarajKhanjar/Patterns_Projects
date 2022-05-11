@@ -1,4 +1,4 @@
-package warCardGame.Main;
+package singalton.warCardGame_classes;
 
 import java.util.ArrayList;
 import java.util.Random;

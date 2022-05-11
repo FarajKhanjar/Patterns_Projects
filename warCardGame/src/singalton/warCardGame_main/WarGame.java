@@ -1,8 +1,11 @@
-package warCardGame.Main;
+package singalton.warCardGame_main;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import singalton.warCardGame_classes.Deck;
+import singalton.warCardGame_classes.Player;
 
 public class WarGame 
 {
@@ -23,7 +26,7 @@ public class WarGame
 		PrintMSG.startGameMessage();
 
 		int index = 1;
-		Player theWinner = null;
+		Player battleWinner = null;
 
 		while (!deck.getInstance().isEmpty()) 
 		{
@@ -35,12 +38,35 @@ public class WarGame
 			allPlayers.sort((player1, player2) -> player2.card - player1.card);
 			allPlayers.forEach(p -> System.out.println(p));
 
-			theWinner = allPlayers.get(0);
-			theWinner.addScore();
-			System.out.println("The Winner in this battle: " + theWinner.name);
+			battleWinner = allPlayers.get(0);
+			battleWinner.addScore();
+			System.out.println("The Winner in this battle: " + battleWinner.name);
 			System.out.println("=====================================\n");
 
 			index++;
 		}
+		
+		finalResult();
+	}
+	
+	private void finalResult() 
+	{
+		int max = -1, points = 0;
+		int  resultOfwinning = 0;
+		String nameOfGameWinner = null;
+
+		for (int i = 0; i < allPlayers.size(); i++) 
+		{
+			points = allPlayers.get(i).getScore();
+			PrintMSG.finakGameMessage();
+			System.out.println(allPlayers.get(i).getName() + " have " + points+" points.");
+			if(points > max) 
+			{
+				max = points;
+				resultOfwinning = i;
+				nameOfGameWinner=allPlayers.get(i).getName();
+			}
+		}
+		System.out.println("Congratulations to " + nameOfGameWinner + " win the War-Game with "+ max + " points :)");
 	}
 }
