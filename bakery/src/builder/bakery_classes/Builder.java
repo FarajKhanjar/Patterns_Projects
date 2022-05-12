@@ -7,11 +7,11 @@ public interface Builder
 {
 	void setPastryType(PastryType hawaiianPizza);
 
-	void setFETACheeseAmount(int mOZZARELLA_AMOUNT_PIZZA);
+	void setMozzarellaCheeseAmount(int MozzarellaCheeseAmount);
 
-	void setMozzarellaCheeseAmount(int fETA_AMOUNT_PIZZA);
+	void setFetaCheeseAmount(int FetaCheeseAmount);
 
-	void setMUSHROOMSAmount(int mUSHROOMS_AMOUNT_PIZZA);
+	void setMushroomsAmount(int MushroomsAmount);
 
-	void setPINEAPPLEAmount(int pINEAPPLE_AMOUNT_PIZZA);	
+	void setPineappleAmount(int PineappleAmount);	
 }

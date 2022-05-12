@@ -10,8 +10,8 @@ public class Director
     public void constructHawaiianPizza(Builder builder) 
     {
         builder.setPastryType(PastryType.HAWAIIAN_PIZZA);
-        builder.setFETACheeseAmount(MOZZARELLA_AMOUNT_PIZZA);
-        builder.setMozzarellaCheeseAmount(FETA_AMOUNT_PIZZA);
+        builder.setMozzarellaCheeseAmount(MOZZARELLA_AMOUNT_PIZZA);
+        builder.setFETACheeseAmount(FETA_AMOUNT_PIZZA);
         builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PIZZA);
         builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PIZZA);
     }
@@ -19,8 +19,8 @@ public class Director
     public void constructDominicanPuffPastry(Builder builder) 
     {
         builder.setPastryType(PastryType.DOMINICAN_PUFFPASTRY);
-        builder.setFETACheeseAmount(MOZZARELLA_AMOUNT_PUFF);
-        builder.setMozzarellaCheeseAmount(FETA_AMOUNT_PUFF);
+        builder.setMozzarellaCheeseAmount(MOZZARELLA_AMOUNT_PUFF);
+        builder.setFETACheeseAmount(FETA_AMOUNT_PUFF);
         builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PUFF);
         builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PUFF);
     }
