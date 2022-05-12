@@ -15,13 +15,11 @@ public class Recipe
 		MUSHROOMS_AMOUNT = mUSHROOMS_AMOUNT;
 		PINEAPPLE_AMOUNT = pINEAPPLE_AMOUNT;
 	}
+	
 	@Override
 	public String toString() {
 		return "Recipe [pastryType=" + pastryType + ", MOZZARELLA_AMOUNT=" + MOZZARELLA_AMOUNT + ", FETA_AMOUNT="
 				+ FETA_AMOUNT + ", MUSHROOMS_AMOUNT=" + MUSHROOMS_AMOUNT + ", PINEAPPLE_AMOUNT=" + PINEAPPLE_AMOUNT
 				+ "]";
 	}
-    
-    
-
 }

@@ -22,10 +22,8 @@ public class Runner
         Pastry pastry2_dominicanPuffPastry = pastryBuilder.getResult();
         System.out.println("Get Pastry :\n" + pastry2_dominicanPuffPastry.getPastryType());
 
-
         RecipeBuilder recupeBuilder = new RecipeBuilder();
 
-        // Director may know several building recipes.
         director.constructHawaiianPizza(recupeBuilder);
         Recipe recipe1_hawaiianPizza = recupeBuilder.getResult();
         System.out.println(recipe1_hawaiianPizza);

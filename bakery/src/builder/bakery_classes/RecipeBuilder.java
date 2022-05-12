@@ -16,36 +16,30 @@ public class RecipeBuilder implements Builder
 	@Override
 	public void setPastryType(PastryType pastryType) 
 	{
-		this.pastryType = pastryType;
-		
+		this.pastryType = pastryType;		
 	}
 
 	@Override
 	public void setMozzarellaCheeseAmount(int mozzarellaCheese) 
 	{
-		this.mozzarellaCheese = mozzarellaCheese;
-		
+		this.mozzarellaCheese = mozzarellaCheese;		
 	}
 
 	@Override
 	public void setFetaCheeseAmount(int fetaCheese) 
 	{
-		this.fetaCheese = fetaCheese;
-		
+		this.fetaCheese = fetaCheese;		
 	}
 
 	@Override
 	public void setMushroomsAmount(int mushroom) 
 	{
-		this.mushroom = mushroom;
-		
+		this.mushroom = mushroom;		
 	}
 
 	@Override
 	public void setPineappleAmount(int pineapple) 
 	{
-		this.pineapple = pineapple;
-		
+		this.pineapple = pineapple;		
 	}
-
 }

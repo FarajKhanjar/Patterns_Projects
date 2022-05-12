@@ -31,5 +31,4 @@ public class Pastry
 				+ FETA_AMOUNT + ", MUSHROOMS_AMOUNT=" + MUSHROOMS_AMOUNT + ", PINEAPPLE_AMOUNT=" + PINEAPPLE_AMOUNT
 				+ "]";
 	}
-	
 }
