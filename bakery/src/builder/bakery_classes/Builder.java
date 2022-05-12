@@ -5,7 +5,7 @@ package builder.bakery_classes;
  */
 public interface Builder 
 {
-	void setPastryType(PastryType hawaiianPizza);
+	void setPastryType(PastryType pastryType);
 
 	void setMozzarellaCheeseAmount(int MozzarellaCheeseAmount);
 

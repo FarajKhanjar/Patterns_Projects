@@ -11,17 +11,17 @@ public class Director
     {
         builder.setPastryType(PastryType.HAWAIIAN_PIZZA);
         builder.setMozzarellaCheeseAmount(MOZZARELLA_AMOUNT_PIZZA);
-        builder.setFETACheeseAmount(FETA_AMOUNT_PIZZA);
-        builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PIZZA);
-        builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PIZZA);
+        builder.setFetaCheeseAmount(FETA_AMOUNT_PIZZA);
+        builder.setMushroomsAmount(MUSHROOMS_AMOUNT_PIZZA);
+        builder.setPineappleAmount(PINEAPPLE_AMOUNT_PIZZA);
     }
     
     public void constructDominicanPuffPastry(Builder builder) 
     {
         builder.setPastryType(PastryType.DOMINICAN_PUFFPASTRY);
         builder.setMozzarellaCheeseAmount(MOZZARELLA_AMOUNT_PUFF);
-        builder.setFETACheeseAmount(FETA_AMOUNT_PUFF);
-        builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PUFF);
-        builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PUFF);
+        builder.setFetaCheeseAmount(FETA_AMOUNT_PUFF);
+        builder.setMushroomsAmount(MUSHROOMS_AMOUNT_PUFF);
+        builder.setPineappleAmount(PINEAPPLE_AMOUNT_PUFF);
     }
 }

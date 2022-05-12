@@ -12,9 +12,6 @@ public class Runner
 	{
         Director director = new Director();
 
-        // Director gets the concrete builder object from the client
-        // (application code). That's because application knows better which
-        // builder to use to get a specific product.
         PastryBuilder pastryBuilder = new PastryBuilder();
         
         director.constructHawaiianPizza(pastryBuilder);
