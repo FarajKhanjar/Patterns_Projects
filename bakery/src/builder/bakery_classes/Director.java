@@ -1,11 +1,27 @@
 package builder.bakery_classes;
 
-/**
- * Director defines the order of building steps. It works with a builder object
- * through common Builder interface. Therefore it may not know what product is
- * being built.
- */
 public class Director 
 {
+	private final int MOZZARELLA_AMOUNT_PIZZA=100,MOZZARELLA_AMOUNT_PUFF=10;
+	private final int FETA_AMOUNT_PIZZA=40,FETA_AMOUNT_PUFF=100;
+	private final int MUSHROOMS_AMOUNT_PIZZA=20,MUSHROOMS_AMOUNT_PUFF=20;
+	private final int PINEAPPLE_AMOUNT_PIZZA=25,PINEAPPLE_AMOUNT_PUFF=20;
 	
+    public void constructHawaiianPizza(Builder builder) 
+    {
+        builder.setPastryType(PastryType.HAWAIIAN_PIZZA);
+        builder.setFETACheeseAmount(MOZZARELLA_AMOUNT_PIZZA);
+        builder.setMozzarellaCheeseAmount(FETA_AMOUNT_PIZZA);
+        builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PIZZA);
+        builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PIZZA);
+    }
+    
+    public void constructDominicanPuffPastry(Builder builder) 
+    {
+        builder.setPastryType(PastryType.DOMINICAN_PUFFPASTRY);
+        builder.setFETACheeseAmount(MOZZARELLA_AMOUNT_PUFF);
+        builder.setMozzarellaCheeseAmount(FETA_AMOUNT_PUFF);
+        builder.setMUSHROOMSAmount(MUSHROOMS_AMOUNT_PUFF);
+        builder.setPINEAPPLEAmount(PINEAPPLE_AMOUNT_PUFF);
+    }
 }
